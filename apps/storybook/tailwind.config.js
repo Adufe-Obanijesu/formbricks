@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
 import base from "../../packages/tailwind-config/tailwind.config";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default {
   ...base,
